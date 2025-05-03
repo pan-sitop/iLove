@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Historia de Amor</title>
+  <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Baloo+Thambi+2:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../estilos/prime.css">
+  <link rel="stylesheet" href="../estilos/puzzle.css">
+</head>
+<body>
+  <div class="heart-container"></div>
+
+  <nav>
+    <a href="../index.html">Portada</a>
+    <a href="./album.html">Álbum</a>
+    <a href="./cont.html">Tiempo Juntos</a>
+    <a href="./puzzlew.html">Rompecabezas</a>
+    <a href="./songs.html">Playlist</a>
+    <a href="./msj.html">Mensajes</a>
+  </nav>
+
+  <section class="puzzle">
+    <h1>ROMPECABEZAS DE AMOR</h1>
+    <div id="puzzleContainer"></div>
+    <aside class="referencia">
+      <h2>Referencia</h2>
+      <img src="../img/Grodilla.jpg" alt="Imagen de referencia">
+    </aside>
+    <button id="btn-finalizar">Terminado</button>
+    <p class="premio">dale click al boton y ve la sorpresa !!!</p>
+  </section>
+  
+  <div id="messageBox" class="overlay" style="display:none;">
+    <div class="message-content">
+      <p id="messageText"></p>
+      <button id="closeMessage">Cerrar</button>
+    </div>
+  </div>
+
+  <script src="../actionss/gen.js"></script>
+  <script src="../actionss/puzzle.js"></script>
+</body>
+</html>

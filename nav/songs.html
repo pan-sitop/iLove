@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Historia de Amor</title>
+  <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Baloo+Thambi+2:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../estilos/prime.css">
+  <link rel="stylesheet" href="../estilos/song.css">
+</head>
+<body>
+  <div class="heart-container"></div>
+
+  <nav>
+    <a href="index.html">Portada</a>
+    <a href="album.html">Álbum</a>
+    <a href="cont.html">Tiempo Juntos</a>
+    <a href="puzzlew.html">Rompecabezas</a>
+    <a href="songs.html" class="active">Playlist</a>
+    <a href="msj.html">Mensajes</a>
+  </nav>
+  <br><br>
+  <section class="playlist">
+    <h2>Playlist</h2>
+    <div class="subtitle">Cancioncitas</div><br>
+    <div class="playlist-grid">
+      <!-- Card 1 -->
+      <div class="card" data-audio="audio1">
+        <img src="../img/billieELish.jpg" alt="Birds of a Feather">
+        <div class="title">Birds of a Feather</div>
+        <div class="artist">Billie Eilish</div>
+        <div class="progress-bar"><div class="progress"></div></div>
+        <div class="controls">
+          <button class="prev">⏮</button>
+          <button class="play">▶️</button>
+          <button class="next">⏭</button>
+        </div>
+        <audio id="audio1" src="../img/Billie Eilish - BIRDS OF A FEATHER (Official Lyric Video) - BillieEilishVEVO.mp3"></audio>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="card" data-audio="audio2">
+        <img src="../img/BaileInolvidable.jpg" alt="Baile Inolvidable">
+        <div class="title">BAILE INOLVIDABLE</div>
+        <div class="artist">Bad Bunny</div>
+        <div class="progress-bar"><div class="progress"></div></div>
+        <div class="controls">
+          <button class="prev">⏮</button>
+          <button class="play">▶️</button>
+          <button class="next">⏭</button>
+        </div>
+        <audio id="audio2" src="../img/BAD BUNNY - BAILE INoLVIDABLE (Visualizer)  DeBÍ TiRAR MáS FOToS - Bad Bunny.mp3"></audio>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="card" data-audio="audio3">
+        <img src="../img/JoJIGOd.jpg" alt="Can I Call You Tonight?">
+        <div class="title">Like You Do</div>
+        <div class="artist">Joji</div>
+        <div class="progress-bar"><div class="progress"></div></div>
+        <div class="controls">
+          <button class="prev">⏮</button>
+          <button class="play">▶️</button>
+          <button class="next">⏭</button>
+        </div>
+        <audio id="audio3" src="../img/Joji - Like You Do - Joji.mp3"></audio><br><br><br>
+      </div>
+    </div>
+  </section>
+
+  <script src="../actionss/songs.js"></script>
+</body>
+</html>

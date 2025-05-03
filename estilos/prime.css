@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Baloo+Thambi+2:wght@400;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Baloo Thambi 2', sans-serif;
+  background: #ffe6f2;
+  overflow-x: hidden;
+}
+
+/* Navegación */
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: rgba(255,182,193,0.8);
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  font-size: 1.3rem;
+  z-index: 100;
+}
+nav a {
+  color: #fff;
+  text-decoration: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 4px;
+  transition: background 0.3s;
+}
+nav a:hover {
+  background: rgba(255,105,180,0.5);
+}
+
+/* Corazones */
+.heart-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  overflow: hidden;
+  z-index: 1;
+}
+.heart {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background: url('heart.png') no-repeat center/cover;
+  opacity: 0;
+  animation: floatHearts 5s ease-out forwards;
+}
+@keyframes floatHearts {
+  0% { transform: translateY(0) scale(0.5); opacity: 1; }
+  50% { opacity: 0.8; }
+  100% { transform: translateY(-800px) scale(1.2); opacity: 0; }
+}
+
+/* Secciones comunes */
+header,
+section {
+  padding: 6rem 2rem 2rem;
+  max-width: 900px;
+  margin: 4rem auto 2rem;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  position: relative;
+  z-index: 2;
+}
+
+/* Portada */
+header h1 {
+  font-family: 'Luckiest Guy', cursive;
+  color: #ff4d79;
+  text-shadow: 2px 2px #fff;
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+.decoracion-portada {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+.circle-img {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  background-size: cover;
+  border: 4px solid #ff99b3;
+}
+.circle-img.small {
+  width: 80px;
+  height: 80px;
+  border-color: #ffccd9;
+}
+.subtexto {
+  font-style: italic;
+  color: #c71585;
+}
+
+/* Tiempo */
+.tiempo {
+  text-align: center;
+}
+.tiempo h1 {
+  font-family: 'Luckiest Guy', cursive;
+  color: #ff4d79;
+}
+#contador {
+  font-size: 1.8rem;
+  color: #e60073;
+  margin-bottom: 1rem;
+}
+#btn-iniciar {
+  background: #ff99b3;
+  border: none;
+  padding: 0.8rem 2rem;
+  font-size: 1.1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+#btn-iniciar:hover {
+  transform: scale(1.05);
+}
+
+/* Rompecabezas */
+.puzzle h1 {
+  font-family: 'Luckiest Guy', cursive;
+  color: #ff4d79;
+}
+.frame-puzzle {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 2rem;
+}
+#puzzleContainer {
+  width: 300px;
+  height: 300px;
+  border: 4px solid #ff99b3;
+}
+.referencia h2 {
+  color: #e60073;
+}
+.referencia img {
+  width: 150px;
+  border: 3px solid #ffccd9;
+}
+#btn-finalizar {
+  background: #ff99b3;
+  border: none;
+  color: #fff;
+  padding: 0.8rem 2rem;
+  font-size: 1.1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+#btn-finalizar:hover {
+  transform: scale(1.05);
+}
+.premio {
+  color: #c71585;
+  font-style: italic;
+  margin-top: 0.5rem;
+}
+
+/* Álbum */
+#album .grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+  gap: 1rem;
+}
+#album img {
+  width: 100%;
+  border-radius: 4px;
+}
+
+/* Playlist */
+.playlist h2 {
+  font-family: 'Luckiest Guy', cursive;
+  color: #ff4d79;
+}
+.playlist iframe {
+  width: 100%;
+  height: 360px;
+}
+
+/* Mensajes */
+.messages h2 {
+  font-family: 'Luckiest Guy', cursive;
+  color: #ff4d79;
+}
+#msgInput,
+#sendBtn {
+  padding: 0.5rem;
+  font-size: 1rem;
+  margin-right: 0.5rem;
+}
+
+.heart-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+}
+
+.heart {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  background-color: pink;
+  transform: rotate(45deg);
+  animation: float 4s linear forwards;
+}
+
+.heart::before,
+.heart::after {
+  content: "";
+  width: 20px;
+  height: 20px;
+  background-color: pink;
+  position: absolute;
+  border-radius: 50%;
+}
+
+.heart::before {
+  top: -10px;
+  left: 0;
+}
+
+.heart::after {
+  left: -10px;
+  top: 0;
+}
+@keyframes float {
+  0% {
+    transform: translateY(0) rotate(45deg);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-100vh) rotate(45deg);
+    opacity: 0;
+  }
+}
