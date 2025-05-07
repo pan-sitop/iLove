@@ -68,7 +68,7 @@ document.addEventListener('DOMContentLoaded', () => {
   if (sendBtn) {
     sendBtn.addEventListener('click', () => {
       const text = document.getElementById('msgInput').value;
-      const phone = '64035144'; // Ajusta el número
+      const phone = '+59164035144'; // Ajusta el número
       if (!text.trim()) return alert('Escribe un mensaje primero');
       window.open(`https://wa.me/${phone}?text=${encodeURIComponent(text)}`, '_blank');
     });
